@@ -1,0 +1,13 @@
+<h1>AirRyan</h1>
+<table>
+  <tr>
+    <td>ID</td>
+    <td>Modello</td>
+    <td>lol</td>
+  </tr>
+  <tr *ngFor="let plane of planes" [style.backgroundColor] = "plane.altitude < 3000 || plane.altitude > 10000? 'red' : 'green'">
+    <td>{{plane.id}}</td>
+    <td>{{plane.model}}</td>
+    <td>{{plane.altitude}} meters</td>
+  </tr>
+</table>
